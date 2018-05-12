@@ -3,7 +3,15 @@
 // ================================
 
 main {
-  padding: rem(10px) 0;
+  margin: rem(20px) auto;
+  width: rem(900px);
+  border-radius: 6px;
+}
+
+header {
+  padding-top: rem(15px);
+  margin-bottom: rem(20px);
+  text-align: center;
 }
 
 h1 {
@@ -13,10 +21,6 @@ h1 {
   font-size: rem(48px);
 }
 
-header {
-  margin-bottom: rem(20px);
-  text-align: center;
-}
 
 .episode-selecter {
   display: flex;
