@@ -19,11 +19,10 @@ Done:
 * Include links to watch episodes online (in new tab) to paint along
 * Paint pots are more usable/visually interesting
 * Move palette to a tray on the side
+* Refactor episodes to use color reference json file
 
 
 To Do:
 * Move tools to a tray on the side
-* Refactor episodes to use color reference json file
 * Add in Bob Ross quote at the top - https://github.com/mndvns/bobross-api
 * Ability to adjust brush shape -- ???
-

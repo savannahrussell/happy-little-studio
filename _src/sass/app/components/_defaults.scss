@@ -25,6 +25,7 @@ body {
 
 a {
   color: getcolor(teal);
+  transition: 250ms ease all;
   &:hover,
   &:focus {
     color: getcolor(teal, dark);

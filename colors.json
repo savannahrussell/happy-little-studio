@@ -2,55 +2,55 @@
   "colors": {
     "sap-green": {
       "value": "#0A3410",
-      "fancyName": "Sap Green",
+      "fancyName": "Sap Green"
     },
     "alizarin-crimson": {
       "value": "#4E1500",
-      "fancyName": "Alizarin Crimson",
+      "fancyName": "Alizarin Crimson"
     },
     "van-dyke-brown": {
       "value": "#221B15",
-      "fancyName": "Van Dyke Brown",
+      "fancyName": "Van Dyke Brown"
     },
     "dark-sienna": {
       "value": "#5F2E1F",
-      "fancyName": "Dark Sienna",
+      "fancyName": "Dark Sienna"
     },
     "midnight-black": {
       "value": "#000000",
-      "fancyName": "Midnight Black",
+      "fancyName": "Midnight Black"
     },
     "prussian-blue": {
       "value": "#021E44",
-      "fancyName": "Prussian Blue",
+      "fancyName": "Prussian Blue"
     },
     "phthalo-blue": {
       "value": "#0C0040",
-      "fancyName": "Phthalo Blue",
+      "fancyName": "Phthalo Blue"
     },
     "phthalo-green": {
       "value" : "#102E3C",
-      "fancyName" : "Phthalo Green",
+      "fancyName" : "Phthalo Green"
     },
     "cadmium-yellow": {
       "value" : "#FFEC00",
-      "fancyName" : "Cadmium Yellow",
+      "fancyName" : "Cadmium Yellow"
     },
     "yellow-ochre": {
       "value" : "#C79B00",
-      "fancyName" : "Yellow Ochre",
+      "fancyName" : "Yellow Ochre"
     },
     "indian-yellow": {
       "value" : "#FFB800",
-      "fancyName" : "Indian Yellow",
+      "fancyName" : "Indian Yellow"
     },
     "bright-red": {
       "value" : "#DB0000",
-      "fancyName" : "Bright Red",
+      "fancyName" : "Bright Red"
     },
     "titanium-white": {
       "value" : "#ffffff",
-      "fancyName" : "Titanium White",
+      "fancyName" : "Titanium White"
     }
   }
 }

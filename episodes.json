@@ -3,244 +3,138 @@
     "000": {
       "name": "Free Paint Mode",
       "videoURL": "https://www.youtube.com/watch?v=YLO7tCdBVrA",
-      "colors": {
-        "sap-green": [
-          "#0A3410",
-          "Sap Green"
-        ],
-        "alizarin-crimson": [
-          "#4E1500",
-          "Alizarin Crimson"
-        ],
-        "van-dyke-brown": [
-          "#221B15",
-          "Van Dyke Brown"
-        ],
-        "dark-sienna": [
-          "#5F2E1F",
-          "Dark Sienna"
-        ],
-        "midnight-black": [
-          "#000000",
-          "Midnight Black"
-        ],
-        "prussian-blue": [
-          "#021E44",
-          "Prussian Blue"
-        ],
-        "phthalo-blue": [
-          "#0C0040",
-          "Phthalo Blue"
-        ],
-        "phthalo-green": [
-          "#102E3C",
-          "Phthalo Green"
-        ],
-        "cadmium-yellow": [
-          "#FFEC00",
-          "Cadmium Yellow"
-        ],
-        "yellow-ochre": [
-          "#C79B00",
-          "Yellow Ochre"
-        ],
-        "indian-yellow": [
-          "#FFB800",
-          "Indian Yellow"
-        ],
-        "bright-red": [
-          "#DB0000",
-          "Bright Red"
-        ],
-        "titanium-white": [
-          "#ffffff",
-          "Titanium White"
-        ]
-      }
+      "colors": [
+        "sap-green",
+        "alizarin-crimson",
+        "van-dyke-brown",
+        "dark-sienna",
+        "midnight-black",
+        "prussian-blue",
+        "phthalo-blue",
+        "phthalo-green",
+        "cadmium-yellow",
+        "yellow-ochre",
+        "indian-yellow",
+        "bright-red",
+        "titanium-white"
+      ]
     },
     "1M": {
       "name": "S1E13 -- Final Reflections",
       "videoURL": "https://www.youtube.com/watch?v=IEQWfszfRlA",
-      "colors": {
-        "alizarin-crimson": [
-          "#4E1500",
-          "Alizarin Crimson"
-        ],
-        "bright-red": [
-          "#DB0000",
-          "Bright Red"
-        ],
-        "cadmium-yellow": [
-          "#FFEC00",
-          "Cadmium Yellow"
-        ],
-        "phthalo-green": [
-          "#102E3C",
-          "Phthalo Green"
-        ],
-        "prussian-blue": [
-          "#021E44",
-          "Prussian Blue"
-        ],
-        "sap-green": [
-          "#0A3410",
-          "Sap Green"
-        ],
-        "titanium-white": [
-          "#ffffff",
-          "Titanium White"
-        ],
-        "van-dyke-brown": [
-          "#221B15",
-          "Van Dyke Brown"
-        ]
-      }
+      "colors": [
+        "alizarin-crimson",
+        "bright-red",
+        "cadmium-yellow",
+        "phthalo-green",
+        "prussian-blue",
+        "sap-green",
+        "titanium-white",
+        "van-dyke-brown"
+      ]
     },
     "8C": {
       "name": "Ep S8E3 -- Warm Winter Day",
       "videoURL": "https://www.youtube.com/watch?v=mUJoNLWQ1yI",
-      "colors": {
-        "alizarin-crimson": [
-          "#4E1500",
-          "Alizarin Crimson"
-        ],
-        "bright-red": [
-          "#DB0000",
-          "Bright Red"
-        ],
-        "cadmium-yellow": [
-          "#FFEC00",
-          "Cadmium Yellow"
-        ],
-        "dark-sienna": [
-          "#5F2E1F",
-          "Dark Sienna"
-        ],
-        "indian-yellow": [
-          "#FFB800",
-          "Indian Yellow"
-        ],
-        "midnight-black": [
-          "#000000",
-          "Midnight Black"
-        ],
-        "phthalo-blue": [
-          "#0C0040",
-          "Phthalo Blue"
-        ],
-        "titanium-white": [
-          "#ffffff",
-          "Titanium White"
-        ],
-        "van-dyke-brown": [
-          "#221B15",
-          "Van Dyke Brown"
-        ],
-        "yellow-ochre": [
-          "#C79B00",
-          "Yellow Ochre"
-        ]
-      }
+      "colors": [
+        "alizarin-crimson",
+        "bright-red",
+        "cadmium-yellow",
+        "dark-sienna",
+        "indian-yellow",
+        "midnight-black",
+        "phthalo-blue",
+        "titanium-white",
+        "van-dyke-brown",
+        "yellow-ochre"
+      ]
+    },
+    "10J": {
+      "name": "Ep S10E10 -- Ocean Sunset",
+      "videoURL": "https://www.youtube.com/watch?v=OJ_xqtvZf3o",
+      "colors": [
+        "alizarin-crimson",
+        "bright-red",
+        "cadmium-yellow",
+        "dark-sienna",
+        "indian-yellow",
+        "midnight-black",
+        "phthalo-blue",
+        "prussian-blue",
+        "titanium-white",
+        "van-dyke-brown",
+        "yellow-ochre"
+      ]
     },
     "14A": {
       "name": "Ep S14E1 -- Distant Mountains",
       "videoURL": "https://www.youtube.com/watch?v=GpA9UM7QGag",
-      "colors": {
-        "alizarin-crimson": [
-          "#4E1500",
-          "Alizarin Crimson"
-        ],
-        "bright-red": [
-          "#DB0000",
-          "Bright Red"
-        ],
-        "cadmium-yellow": [
-          "#FFEC00",
-          "Cadmium Yellow"
-        ],
-        "dark-sienna": [
-          "#5F2E1F",
-          "Dark Sienna"
-        ],
-        "indian-yellow": [
-          "#FFB800",
-          "Indian Yellow"
-        ],
-        "midnight-black": [
-          "#000000",
-          "Midnight Black"
-        ],
-        "phthalo-blue": [
-          "#0C0040",
-          "Phthalo Blue"
-        ],
-        "phthalo-green": [
-          "#102E3C",
-          "Phthalo Green"
-        ],
-        "prussian-blue": [
-          "#021E44",
-          "Prussian Blue"
-        ],
-        "sap-green": [
-          "#0A3410",
-          "Sap Green"
-        ],
-        "titanium-white": [
-          "#ffffff",
-          "Titanium White"
-        ],
-        "van-dyke-brown": [
-          "#221B15",
-          "Van Dyke Brown"
-        ],
-        "yellow-ochre": [
-          "#C79B00",
-          "Yellow Ochre"
-        ]
-      }
+      "colors": [
+        "alizarin-crimson",
+        "bright-red",
+        "cadmium-yellow",
+        "dark-sienna",
+        "indian-yellow",
+        "midnight-black",
+        "phthalo-blue",
+        "phthalo-green",
+        "prussian-blue",
+        "sap-green",
+        "titanium-white",
+        "van-dyke-brown",
+        "yellow-ochre"
+      ]
     },
     "19I": {
       "name": "Ep S19E9 -- Ebb Tide",
       "videoURL": "https://www.youtube.com/watch?v=mFOna_LN7Ys",
-      "colors": {
-        "alizarin-crimson": [
-          "#4E1500",
-          "Alizarin Crimson"
-        ],
-        "bright-red": [
-          "#DB0000",
-          "Bright Red"
-        ],
-        "cadmium-yellow": [
-          "#FFEC00",
-          "Cadmium Yellow"
-        ],
-        "dark-sienna": [
-          "#5F2E1F",
-          "Dark Sienna"
-        ],
-        "midnight-black": [
-          "#000000",
-          "Midnight Black"
-        ],
-        "phthalo-blue": [
-          "#0C0040",
-          "Phthalo Blue"
-        ],
-        "titanium-white": [
-          "#ffffff",
-          "Titanium White"
-        ],
-        "van-dyke-brown": [
-          "#221B15",
-          "Van Dyke Brown"
-        ],
-        "yellow-ochre": [
-          "#C79B00",
-          "Yellow Ochre"
-        ]
-      }
+      "colors": [
+        "alizarin-crimson",
+        "bright-red",
+        "cadmium-yellow",
+        "dark-sienna",
+        "midnight-black",
+        "phthalo-blue",
+        "titanium-white",
+        "van-dyke-brown",
+        "yellow-ochre"
+      ]
+    },
+    "21D": {
+      "name": "Ep S21E4 -- Serenity",
+      "videoURL": "https://www.youtube.com/watch?v=crqmO3qDdco",
+      "colors": [
+        "alizarin-crimson",
+        "bright-red",
+        "cadmium-yellow",
+        "dark-sienna",
+        "indian-yellow",
+        "midnight-black",
+        "phthalo-blue",
+        "sap-green",
+        "titanium-white",
+        "van-dyke-brown",
+        "yellow-ochre"
+      ]
+    },
+    "25I": {
+      "name": "Ep S25E9 -- Downstream View",
+      "videoURL": "https://www.youtube.com/watch?v=KsDPg5HZYNw",
+      "colors": [
+        "alizarin-crimson",
+        "bright-red",
+        "cadmium-yellow",
+        "dark-sienna",
+        "indian-yellow",
+        "midnight-black",
+        "phthalo-blue",
+        "phthalo-green",
+        "prussian-blue",
+        "sap-green",
+        "titanium-white",
+        "van-dyke-brown",
+        "yellow-ochre"
+      ]
     }
   }
 }

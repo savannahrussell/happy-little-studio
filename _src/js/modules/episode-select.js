@@ -2,6 +2,8 @@ var $ = require('jquery');
 
 // parse a JSON array into something searchable
 
+// First, get all of our color data in an object we can use
+
 // After selecting an episode...
 
   // take a look at the episode number
@@ -13,6 +15,26 @@ var $ = require('jquery');
     // and the episode link so you can watch along
 
 export default function episodeSelect($nodes) {
+
+  var colorObject;
+
+  function getColorData() {
+    var url = [window.location.protocol, '', window.location.host, 'colors.json'].join('/');
+    $.ajax({
+      url: url,
+      dataType: 'json',
+      error: function(error) {
+        console.log('yeah no colors');
+        console.log(error);
+      },
+      success: function(result) {
+        // Let's get some data
+        colorObject = result.colors;
+        // console.log(colorObject);
+        // console.log(Object.keys(colorObject));
+      }
+    });
+  }
 
   function grabEpisodeData(epCode) {
     var url = [window.location.protocol, '', window.location.host, 'episodes.json'].join('/');
@@ -35,13 +57,12 @@ export default function episodeSelect($nodes) {
 
         // Load up our brush
         function load_palette(obj) {
-          var result = [];
-          for (var i in obj) {
-            console.log(i);
-            console.log(i[0]);
-            result.push(`<button class="palette-swatch js-swatch ${i}" data-color="${obj[i][0]}">${obj[i][1]}</button>`);
+          var paletteMarkup = [];
+          for (var i = 0; i < colorsUsed.length; i++) {
+            var colorVal = colorsUsed[i];
+            paletteMarkup.push(`<button class="palette-swatch js-swatch ${colorVal}" data-color="${colorObject[colorVal]["value"]}">${colorObject[colorVal]["fancyName"]}</button>`);
           }
-          return result;
+          return paletteMarkup;
         }
         var colorArray = load_palette(colorsUsed);
         $('.js-palette').html(colorArray);
@@ -51,6 +72,10 @@ export default function episodeSelect($nodes) {
       }
     });
   }
+
+  $(document).ready(function(){
+    getColorData();
+  });
 
   $('.js-episode-select').on('change', function(event) {
     var selectedEpCode = event.target.value;
