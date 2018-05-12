@@ -1,0 +1,92 @@
+// ================================
+// Main
+// ================================
+
+main {
+  padding: rem(10px) 0;
+}
+
+h1 {
+  margin-bottom: rem(20px);
+  font-weight: 800;
+  color: getcolor(teal, dark);
+  font-size: rem(48px);
+}
+
+header {
+  margin-bottom: rem(20px);
+  text-align: center;
+}
+
+.episode-selecter {
+  display: flex;
+  width: rem(800px);
+  margin-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(30px);
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.selecter-label {
+  font-weight: 600;
+}
+
+.mode-select {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: rem(500px);
+}
+
+.episode-select {
+  appearance: none;
+  padding-right: 5%;
+  height: rem(40px);
+  border: 2px solid getcolor(teal);
+  border-radius: 3px;
+  background-color: getcolor(white);
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='-114 116.6 14.4 8.6' style='enable-background:new -114 116.6 14.4 8.6%3B' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .st0%7Bfill:none%3Bstroke:%2326A69A%3Bstroke-width:2%3B%7D %3C/style%3E %3Cline class='st0' x1='-113.2' y1='117.3' x2='-106.1' y2='124.5'/%3E %3Cline class='st0' x1='-100.3' y1='117.3' x2='-106.6' y2='123.6'/%3E %3C/svg%3E");
+  background-size: 15px 15px;
+  background-position: right 10px bottom 50%;
+  background-repeat: no-repeat;
+  font-size: rem(16px);
+}
+
+.paintalong {
+  font-size: rem(20px);
+  text-align: center;
+}
+
+.paintalong-link {
+  display: block;
+  font-weight: 800;
+}
+
+.canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(50px);
+  width: rem(800px);
+  height: rem(600px);
+  border: 1px solid getcolor(grey, dark);
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: rem(10px);
+  width: rem(800px);
+}
+
+.legalese {
+  margin-bottom: rem(20px);
+  text-align: center;
+  line-height: 1.3;
+
+  a {
+    font-weight: 800;
+  }
+}

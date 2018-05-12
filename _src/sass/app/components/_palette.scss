@@ -1,0 +1,94 @@
+// ================================
+// Palette
+// ================================
+
+.palette {
+  // display: flex;
+  // justify-content: space-between;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: rem(30px);
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0vw;
+  padding: rem(10px);
+  width: rem(260px);
+  height: 100vh;
+  border-left: 1px solid getcolor(grey, dark);
+  background-color: getcolor(white);
+  transform: translateX(300px);
+  transition: 500ms linear all;
+  will-change: translateX;
+  z-index: 5;
+  &.is-inView {
+    transform: translateX(0);
+  }
+}
+
+.palette-swatch {
+  @include naked-button;
+  display: block;
+  margin: 0 rem(10px);
+  padding: rem(5px) rem(10px);
+  min-width: rem(100px);
+  border-radius: 3px;
+  color: getcolor(white);
+  font-weight: 800;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0);
+  transition: 250ms ease all;
+  &.cadmium-yellow {
+    color: getcolor(black);
+  }
+  &.titanium-white {
+    border: 1px solid getcolor(grey);
+    color: getcolor(black);
+  }
+  &:focus,
+  &:hover {
+    box-shadow: 6px 6px 2px 1px transparentize(getcolor(teal, dark), 0.3);
+  }
+  &.is-active {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0);
+  }
+}
+
+// These HAVE to stay under the palette-swatch class
+// to override the background reset
+
+// --------------------------------
+// Colors
+// --------------------------------
+
+// Color Palette
+$colors: (
+  sap-green:         #0A3410,
+  alizarin-crimson:  #4E1500,
+  van-dyke-brown:    #221B15,
+  dark-sienna:       #5F2E1F,
+  midnight-black:    #000000,
+  prussian-blue:     #021E44,
+  phthalo-blue:      #0C0040,
+  phthalo-green:     #102E3C,
+  cadmium-yellow:    #FFEC00,
+  yellow-ochre:      #C79B00,
+  indian-yellow:     #FFB800,
+  bright-red:        #DB0000,
+  titanium-white:    #FFFFFF
+);
+
+@each $name, $color in $colors {
+  .#{$name} {
+    background-color: $color;
+
+    &-text {
+      color: $color;
+    }
+
+    &-border {
+      border-color: $color;
+    }
+  }
+}

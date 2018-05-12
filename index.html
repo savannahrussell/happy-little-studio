@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Little Studio</title>
+  <meta name="viewport" content="width=device-width" />
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,800" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" media="all" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119126858-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119126858-1');
+  </script>
+
+</head>
+
+<body>
+
+  <main>
+
+    <header>
+      <h1>Happy Little Studio</h1>
+
+      <p>Best used on <strong>large screens</strong> for now</p>
+    </header>
+
+    <div class="episode-selecter">
+
+      <div class="mode-select">
+        <label for="episode-select" class="selecter-label">Select Episode</label>
+        <select name="episode-select" class="js-episode-select episode-select">
+          <option value="000" selected>Free Paint Mode</option>
+          <option value="1M">S1E13 -- Final Reflections</option>
+          <option value="8C">S8E3 -- Warm Winter Day</option>
+          <option value="14A">S14E1 -- Distant Mountains</option>
+          <option value="19I">S19E9 -- Ebb Tide</option>
+        </select>
+      </div>
+
+      <p class="paintalong">
+        <a href="https://www.youtube.com/watch?v=YLO7tCdBVrA" class="js-paintalong-link paintalong-link" target="_blank" rel="nofollow">Paint Along with Bob</a>
+      </p>
+
+    </div>
+
+    <div class="toolkit">
+      <div class="tool brush-width-tool">
+        <label class="toolkit-label" for="brush-width">Brush Width</label>
+        <input id="brush-width" class="js-tool-brushwidth" type="range" min="5" max="100" step="5" value="25">
+      </div>
+
+      <div class="tool color-opacity-tool">
+        <label class="toolkit-label" for="color-opacity">Color Opacity</label>
+        <input id="color-opacity" class="js-tool-coloropacity" type="range" min="0" max="100" step="5" value="100">
+      </div>
+
+      <div class="tool">
+        <button class="js-drawer-opener tool-button" data-opens="js-palette" type="button">Palette Drawer</button>
+      </div>
+    </div>
+
+    <div class="js-drawer js-palette palette">
+      <button class="palette-swatch js-swatch sap-green" data-color="#0A3410">Sap Green</button>
+      <button class="palette-swatch js-swatch alizarin-crimson" data-color="#4E1500">Alizarin Crimson</button>
+      <button class="palette-swatch js-swatch van-dyke-brown" data-color="#221B15">Van Dyke Brown</button>
+      <button class="palette-swatch js-swatch dark-sienna" data-color="#5F2E1F">Dark Sienna</button>
+      <button class="palette-swatch js-swatch midnight-black" data-color="#000000">Midnight Black</button>
+      <button class="palette-swatch js-swatch prussian-blue" data-color="#021E44">Prussian Blue</button>
+      <button class="palette-swatch js-swatch phthalo-blue" data-color="#0C0040">Phthalo Blue</button>
+      <button class="palette-swatch js-swatch phthalo-green" data-color="#102E3C">Phthalo Green</button>
+      <button class="palette-swatch js-swatch cadmium-yellow" data-color="#FFEC00">Cadmium Yellow</button>
+      <button class="palette-swatch js-swatch yellow-ochre" data-color="#C79B00">Yellow Ochre</button>
+      <button class="palette-swatch js-swatch indian-yellow" data-color="#FFB800">Indian Yellow</button>
+      <button class="palette-swatch js-swatch bright-red" data-color="#DB0000">Bright Red</button>
+      <button class="palette-swatch js-swatch titanium-white" data-color="#ffffff">Titanium White</button>
+    </div>
+
+    <canvas id="draw" class="canvas" width="800" height="600"></canvas>
+
+    <footer>
+      <p class="legalese">This site was made by <a href="https://twitter.com/littlebirdgirl" target="_blank" rel="nofollow">@littlebirdgirl</a>. They don't intend to profit from this. <br />Instead, <a href="http://www.pbs.org/donate/" target="_blank" rel="nofollow">support your local PBS station</a>.</p>
+      <p class="legalese">The Bob Ross name and images are trademarks of Bob Ross Inc. All linked videos are owned by Bob Ross Inc, with the exception of "Happy Little Clouds", which is property of PBS Digital Studios.</p>
+    </footer>
+
+  </main>
+
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js?ver=2.2.4"></script>
+
+<script src="assets/js/main.js"></script>
+</html>

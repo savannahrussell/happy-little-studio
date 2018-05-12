@@ -1,0 +1,37 @@
+{
+  "name": "polaris",
+  "version": "1.0.0",
+  "description": "A Sass starter kit.",
+  "main": "_build.js",
+  "scripts": {
+    "start": "npm run build:sass",
+    "build:sass": "node _build.js",
+    "watch:sass": "chokidar \"./**/*.scss\" -c \"npm run build:sass\""
+  },
+  "author": "40Digits",
+  "contributors": [
+    {
+      "name": "CK Hicks"
+    },
+    {
+      "name": "Seth MacPherson"
+    },
+    {
+      "name": "Savannah Russell"
+    },
+    {
+      "name": "Brandon Cash"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "chokidar-cli": "^1.2.0",
+    "colors": "^1.1.2",
+    "fs-extra": "^3.0.1",
+    "glob": "^7.0.5",
+    "node-notifier": "^4.6.0",
+    "node-sass": "^3.8.0",
+    "postcss": "^5.0.21"
+  }
+}

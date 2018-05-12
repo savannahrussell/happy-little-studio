@@ -1,0 +1,43 @@
+# Compiled Source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.iso
+*.jar
+
+# Logs & Databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.sublime-*
+.40d-error.log
+.npm-debug.log
+
+# OS Generated Files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Build Folders #
+#################
+node_modules
+
+# PHPStorm #
+############
+.idea

@@ -1,0 +1,38 @@
+//=================================
+// Custom App Config
+//=================================
+
+//---------------------------------
+// App Specific Support Files
+//---------------------------------
+
+@import "_supports/all";
+
+//---------------------------------
+// Application Configurations
+//---------------------------------
+
+// The settings in $appConfig below merge with $defaultConfig
+// in: `/app/core/_options.scss` and can be accessed through
+// the resulting $config map. $appConfig has priority with the merge and will
+// overwrite properties in the $defaultConfig map.
+
+$appConfig: (
+  colors: (
+    black: (
+      base: #000,
+    ),
+    white: (
+      base: #fff,
+    ),
+    gray: (
+      dark: #263238,
+      base: #777,
+      light: #eee,
+    ),
+    teal: (
+      base: #26A69A,
+      dark: #006064
+    )
+  ),
+);
