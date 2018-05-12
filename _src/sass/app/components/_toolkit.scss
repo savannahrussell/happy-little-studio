@@ -23,6 +23,9 @@
 
 .tool {
   width: rem(200px);
+  input {
+    border: none;
+  }
 }
 
 .tool-button {
