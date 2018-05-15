@@ -15,14 +15,6 @@ header {
   text-align: center;
 }
 
-h1 {
-  margin-bottom: rem(20px);
-  font-weight: 800;
-  color: getcolor(teal, dark);
-  font-size: rem(48px);
-}
-
-
 .episode-selecter {
   display: flex;
   width: rem(800px);
@@ -60,13 +52,11 @@ h1 {
 }
 
 .paintalong {
-  font-size: rem(20px);
   text-align: center;
 }
 
 .paintalong-link {
   display: block;
-  font-weight: 800;
 }
 
 .canvas {
@@ -77,21 +67,4 @@ h1 {
   width: rem(800px);
   height: rem(600px);
   border: 1px solid getcolor(grey, dark);
-}
-
-footer {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: rem(10px);
-  width: rem(800px);
-}
-
-.legalese {
-  margin-bottom: rem(20px);
-  text-align: center;
-  line-height: 1.3;
-
-  a {
-    font-weight: 800;
-  }
 }

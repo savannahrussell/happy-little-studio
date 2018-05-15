@@ -45,7 +45,7 @@
     <header>
       <h1>Happy Little Studio</h1>
 
-      <p>Best used on <strong>large screens</strong> for now</p>
+      <p class="smol-p">Best used on <strong>large screens</strong> for now</p>
     </header>
 
     <div class="episode-selecter">
@@ -65,7 +65,7 @@
       </div>
 
       <p class="paintalong">
-        <a href="https://www.youtube.com/watch?v=YLO7tCdBVrA" class="js-paintalong-link paintalong-link" target="_blank" rel="nofollow">Paint Along with Bob</a>
+        <a href="https://www.youtube.com/watch?v=YLO7tCdBVrA" class="js-paintalong-link paintalong-link big-link" target="_blank" rel="nofollow">Paint Along with Bob</a>
       </p>
 
     </div>
@@ -81,7 +81,7 @@
         <input id="color-opacity" class="js-tool-coloropacity" type="range" min="0" max="100" step="5" value="100">
       </div>
 
-      <div class="tool">
+      <div class="tool palette-drawer">
         <button class="js-drawer-opener tool-button" data-opens="js-palette" type="button">Palette Drawer</button>
       </div>
     </div>
@@ -104,9 +104,19 @@
 
     <canvas id="draw" class="canvas" width="800" height="600"></canvas>
 
+    <div class="toolkit">
+      <p class="tool save-art">
+        <a href="#" class="js-download tool-button" download>Download</a>
+      </p>
+
+      <p>
+        <a href="http://www.happylittle.studio/about.html" class="big-link about-link">About this project</a>
+      </p>
+    </div>
+
     <footer>
-      <p class="legalese">This site was made by <a href="https://twitter.com/littlebirdgirl" target="_blank" rel="nofollow">@littlebirdgirl</a>. They don't intend to profit from this. <br />Instead, <a href="http://www.pbs.org/donate/" target="_blank" rel="nofollow">support your local PBS station</a>.</p>
-      <p class="legalese">The Bob Ross name and images are trademarks of Bob Ross Inc. All linked videos are owned by Bob Ross Inc, with the exception of "Happy Little Clouds", which is property of PBS Digital Studios.</p>
+      <p class="legalese smol-p">This site was made by <a href="https://twitter.com/littlebirdgirl" target="_blank" rel="nofollow">@littlebirdgirl</a>. They don't intend to profit from this. <br />Instead, <a href="http://www.pbs.org/donate/" target="_blank" rel="nofollow">support your local PBS station</a>.</p>
+      <p class="legalese smol-p">The Bob Ross name and images are trademarks of Bob Ross Inc. All linked videos are owned by Bob Ross Inc, with the exception of "Happy Little Clouds", which is property of PBS Digital Studios.</p>
     </footer>
 
   </main>

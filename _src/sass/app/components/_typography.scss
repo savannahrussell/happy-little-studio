@@ -1,0 +1,57 @@
+// ================================
+// Typography
+// ================================
+
+
+h1, h2, h3 {
+  margin-bottom: rem(20px);
+  font-weight: 800;
+  color: getcolor(teal, dark);
+}
+
+h1 {
+  font-size: rem(48px);
+}
+
+h2 {
+  padding-top: rem(10px);
+  font-size: rem(36px);
+}
+
+h3 {
+  padding-top: rem(10px);
+  font-size: rem(30px);
+}
+
+p {
+  font-size: rem(20px);
+  line-height: 1.3;
+}
+
+ul {
+  margin-bottom: rem(20px);
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: rem(5px);
+  font-size: rem(20px);
+  line-height: 1.3;
+}
+
+a {
+  font-weight: 800;
+}
+
+.special-p {
+  font-size: rem(22px);
+  color: getcolor(teal, dark);
+}
+
+.smol-p {
+  font-size: rem(16px);
+}
+
+.about-link {
+  line-height: rem(50px); // to match the buttons
+}

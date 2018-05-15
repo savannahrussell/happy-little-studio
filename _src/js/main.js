@@ -14,6 +14,10 @@ const loaded = loadActions(filterActions([
     selector: '.js-drawer-opener',
     load: [require('./modules/open-drawer')],
   },
+  {
+    selector: '.js-download',
+    load: [require('./modules/save-painting')],
+  }
 ]));
 
-console.log('🎨', loaded);
+// console.log('🎨', loaded);
