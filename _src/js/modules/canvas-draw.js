@@ -4,6 +4,10 @@ export default function draw($nodes) {
   const canvas = document.querySelector('#draw');
   const ctx = canvas.getContext('2d');
   var isDrawing, lastX, lastY;
+
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
   ctx.strokeStyle = '#000000';
   ctx.lineJoin = 'round';
   ctx.lineCap = 'round';
