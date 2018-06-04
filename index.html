@@ -39,6 +39,16 @@
     gtag('config', 'UA-119126858-1');
   </script>
 
+  <style>
+  :root {
+    --custom-blend-color: #7f7f7f;
+  }
+
+  .palette-swatch-custom {
+    background-color: var(--custom-blend-color);
+  }
+  </style>
+
 </head>
 
 <body>
@@ -51,7 +61,7 @@
       <p class="smol-p">Best used on <strong>large screens</strong> for now</p>
     </header>
 
-    <div class="episode-selecter">
+    <div class="toolkit episode-selecter">
 
       <div class="mode-select">
         <label for="episode-select" class="selecter-label">Select Episode</label>
@@ -74,35 +84,110 @@
     </div>
 
     <div class="toolkit">
+
+      <div class="tool brush-drawer-button">
+        <button class="js-drawer-opener tool-button" data-opens="js-brush" type="button">Brush Drawer</button>
+      </div>
+
+      <div class="tool palette-drawer-button">
+        <button class="js-drawer-opener js-drawer-closer tool-button" data-opens="js-palette" data-closes="js-blend" type="button">Palette Drawer</button>
+      </div>
+
+    </div>
+
+    <div class="js-drawer js-brush tools drawer">
       <div class="tool brush-width-tool">
         <label class="toolkit-label" for="brush-width">Brush Width</label>
         <input id="brush-width" class="js-tool-brushwidth" type="range" min="5" max="100" step="5" value="25">
       </div>
 
+      <fieldset class="tool brush-shape-tool">
+        <legend class="toolkit-legend">Brush Shape</legend>
+        <div class="tool-radio-wrap">
+          <input type="radio" id="brush-shape-round" name="brush-shape" value="round" checked>
+          <label class="toolkit-label-radio" for="brush-shape-round">Round</label>
+        </div>
+        <div class="tool-radio-wrap">
+          <input type="radio" id="brush-shape-square" name="brush-shape" value="square">
+          <label class="toolkit-label-radio" for="brush-shape-square">Square</label>
+        </div>
+      </fieldset>
+
       <div class="tool color-opacity-tool">
         <label class="toolkit-label" for="color-opacity">Color Opacity</label>
         <input id="color-opacity" class="js-tool-coloropacity" type="range" min="0" max="100" step="5" value="100">
       </div>
-
-      <div class="tool palette-drawer">
-        <button class="js-drawer-opener tool-button" data-opens="js-palette" type="button">Palette Drawer</button>
-      </div>
     </div>
 
-    <div class="js-drawer js-palette palette">
-      <button class="palette-swatch js-swatch sap-green" data-color="#0A3410">Sap Green</button>
-      <button class="palette-swatch js-swatch alizarin-crimson" data-color="#4E1500">Alizarin Crimson</button>
-      <button class="palette-swatch js-swatch van-dyke-brown" data-color="#221B15">Van Dyke Brown</button>
-      <button class="palette-swatch js-swatch dark-sienna" data-color="#5F2E1F">Dark Sienna</button>
-      <button class="palette-swatch js-swatch midnight-black" data-color="#000000">Midnight Black</button>
-      <button class="palette-swatch js-swatch prussian-blue" data-color="#021E44">Prussian Blue</button>
-      <button class="palette-swatch js-swatch phthalo-blue" data-color="#0C0040">Phthalo Blue</button>
-      <button class="palette-swatch js-swatch phthalo-green" data-color="#102E3C">Phthalo Green</button>
-      <button class="palette-swatch js-swatch cadmium-yellow" data-color="#FFEC00">Cadmium Yellow</button>
-      <button class="palette-swatch js-swatch yellow-ochre" data-color="#C79B00">Yellow Ochre</button>
-      <button class="palette-swatch js-swatch indian-yellow" data-color="#FFB800">Indian Yellow</button>
-      <button class="palette-swatch js-swatch bright-red" data-color="#DB0000">Bright Red</button>
-      <button class="palette-swatch js-swatch titanium-white" data-color="#ffffff">Titanium White</button>
+    <div class="js-drawer js-palette palette drawer">
+      <button class="palette-swatch js-swatch sap-green" data-color="#0A3410" type="button">Sap Green</button>
+      <button class="palette-swatch js-swatch alizarin-crimson" data-color="#4E1500" type="button">Alizarin Crimson</button>
+      <button class="palette-swatch js-swatch van-dyke-brown" data-color="#221B15" type="button">Van Dyke Brown</button>
+      <button class="palette-swatch js-swatch dark-sienna" data-color="#5F2E1F" type="button">Dark Sienna</button>
+      <button class="palette-swatch js-swatch midnight-black" data-color="#000000" type="button">Midnight Black</button>
+      <button class="palette-swatch js-swatch prussian-blue" data-color="#021E44" type="button">Prussian Blue</button>
+      <button class="palette-swatch js-swatch phthalo-blue" data-color="#0C0040" type="button">Phthalo Blue</button>
+      <button class="palette-swatch js-swatch phthalo-green" data-color="#102E3C" type="button">Phthalo Green</button>
+      <button class="palette-swatch js-swatch cadmium-yellow" data-color="#FFEC00" type="button">Cadmium Yellow</button>
+      <button class="palette-swatch js-swatch yellow-ochre" data-color="#C79B00" type="button">Yellow Ochre</button>
+      <button class="palette-swatch js-swatch indian-yellow" data-color="#FFB800" type="button">Indian Yellow</button>
+      <button class="palette-swatch js-swatch bright-red" data-color="#DB0000" type="button">Bright Red</button>
+      <button class="palette-swatch js-swatch titanium-white" data-color="#ffffff" type="button">Titanium White</button>
+      <button class="js-drawer-opener tool-button" data-opens="js-blend">Mix Colors</button>
+    </div>
+
+    <div class="js-drawer js-blend blend drawer">
+      <button class="js-drawer-closer tool-button" data-closes="js-blend">Back to Palette</button>
+
+      <div class="blend-pots-container">
+        <p class="toolkit-label">First Color</p>
+
+        <div class="tool-blend-pots js-blend-pots first-blend-color">
+          <button class="palette-blend-swatch js-blend-swatch sap-green" data-color="#0A3410" type="button"><span class="visually-hidden">Sap Green</span></button>
+          <button class="palette-blend-swatch js-blend-swatch alizarin-crimson" data-color="#4E1500" type="button"><span class="visually-hidden">Alizarin Crimson</span></button>
+          <button class="palette-blend-swatch js-blend-swatch van-dyke-brown" data-color="#221B15" type="button"><span class="visually-hidden">Van Dyke Brown</span></button>
+          <button class="palette-blend-swatch js-blend-swatch dark-sienna" data-color="#5F2E1F" type="button"><span class="visually-hidden">Dark Sienna</span></button>
+          <button class="palette-blend-swatch js-blend-swatch midnight-black" data-color="#000000" type="button"><span class="visually-hidden">Midnight Black</span></button>
+          <button class="palette-blend-swatch js-blend-swatch prussian-blue" data-color="#021E44" type="button"><span class="visually-hidden">Prussian Blue</span></button>
+          <button class="palette-blend-swatch js-blend-swatch phthalo-blue" data-color="#0C0040" type="button"><span class="visually-hidden">Phthalo Blue</span></button>
+          <button class="palette-blend-swatch js-blend-swatch phthalo-green" data-color="#102E3C" type="button"><span class="visually-hidden">Phthalo Green</span></button>
+          <button class="palette-blend-swatch js-blend-swatch cadmium-yellow" data-color="#FFEC00" type="button"><span class="visually-hidden">Cadmium Yellow</span></button>
+          <button class="palette-blend-swatch js-blend-swatch yellow-ochre" data-color="#C79B00" type="button"><span class="visually-hidden">Yellow Ochre</span></button>
+          <button class="palette-blend-swatch js-blend-swatch indian-yellow" data-color="#FFB800" type="button"><span class="visually-hidden">Indian Yellow</span></button>
+          <button class="palette-blend-swatch js-blend-swatch bright-red" data-color="#DB0000" type="button"><span class="visually-hidden">Bright Red</span></button>
+          <button class="palette-blend-swatch js-blend-swatch titanium-white is-active" data-color="#ffffff" type="button"><span class="visually-hidden">Titanium White</span></button>
+        </div>
+      </div>
+
+      <div class="blend-pots-container">
+        <p class="toolkit-label">Second Color</p>
+
+        <div class="tool-blend-pots js-blend-pots second-blend-color">
+          <button class="palette-blend-swatch js-blend-swatch sap-green" data-color="#0A3410" type="button"><span class="visually-hidden">Sap Green</span></button>
+          <button class="palette-blend-swatch js-blend-swatch alizarin-crimson" data-color="#4E1500" type="button"><span class="visually-hidden">Alizarin Crimson</span></button>
+          <button class="palette-blend-swatch js-blend-swatch van-dyke-brown" data-color="#221B15" type="button"><span class="visually-hidden">Van Dyke Brown</span></button>
+          <button class="palette-blend-swatch js-blend-swatch dark-sienna" data-color="#5F2E1F" type="button"><span class="visually-hidden">Dark Sienna</span></button>
+          <button class="palette-blend-swatch js-blend-swatch midnight-black is-active" data-color="#000000" type="button"><span class="visually-hidden">Midnight Black</span></button>
+          <button class="palette-blend-swatch js-blend-swatch prussian-blue" data-color="#021E44" type="button"><span class="visually-hidden">Prussian Blue</span></button>
+          <button class="palette-blend-swatch js-blend-swatch phthalo-blue" data-color="#0C0040" type="button"><span class="visually-hidden">Phthalo Blue</span></button>
+          <button class="palette-blend-swatch js-blend-swatch phthalo-green" data-color="#102E3C" type="button"><span class="visually-hidden">Phthalo Green</span></button>
+          <button class="palette-blend-swatch js-blend-swatch cadmium-yellow" data-color="#FFEC00" type="button"><span class="visually-hidden">Cadmium Yellow</span></button>
+          <button class="palette-blend-swatch js-blend-swatch yellow-ochre" data-color="#C79B00" type="button"><span class="visually-hidden">Yellow Ochre</span></button>
+          <button class="palette-blend-swatch js-blend-swatch indian-yellow" data-color="#FFB800" type="button"><span class="visually-hidden">Indian Yellow</span></button>
+          <button class="palette-blend-swatch js-blend-swatch bright-red" data-color="#DB0000" type="button"><span class="visually-hidden">Bright Red</span></button>
+          <button class="palette-blend-swatch js-blend-swatch titanium-white" data-color="#ffffff" type="button"><span class="visually-hidden">Titanium White</span></button>
+        </div>
+      </div>
+
+      <div class="tool color-blend-tool">
+        <label class="toolkit-label" for="blend">Blend Colors</label>
+        <input id="blend" class="js-tool-blend" type="range" min="0" max="100" step="5" value="50">
+      </div>
+
+      <div class="tool custom-color">
+        <button class="js-swatch js-blended-color palette-swatch palette-swatch-custom" type="button" data-color="#7f7f7f">Custom Color</button>
+      </div>
+
     </div>
 
     <canvas id="draw" class="canvas" width="800" height="600"></canvas>

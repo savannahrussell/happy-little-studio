@@ -39,12 +39,15 @@ export default function draw($nodes) {
 
   $('.js-tool-brushwidth').on('change', function(event) {
     ctx.lineWidth = this.value;
-  })
+  });
 
   $('.js-tool-coloropacity').on('change', function(event) {
     ctx.globalAlpha = this.value / 100;
-  })
+  });
 
+  $('input[type=radio][name=brush-shape]').on('change', function(event) {
+    ctx.lineCap = this.value;
+  });
 
   canvas.addEventListener('mousemove', draw);
   canvas.addEventListener('mouseup', () => isDrawing = false);

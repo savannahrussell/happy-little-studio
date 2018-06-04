@@ -17,6 +17,10 @@ const loaded = loadActions(filterActions([
   {
     selector: '.js-download',
     load: [require('./modules/save-painting')],
+  },
+  {
+    selector: '.js-blend',
+    load: [require('./modules/blend-colors')],
   }
 ]));
 

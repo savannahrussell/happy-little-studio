@@ -10,4 +10,12 @@ export default function openDrawer($nodes) {
 
   });
 
+  $('body').on('click tap touch', '.js-drawer-closer', function(event) {
+
+    var targetDrawer = $(this).data('closes'),
+    target = document.getElementsByClassName(targetDrawer)[0];
+    $(target).removeClass('is-inView');
+
+  });
+
 }

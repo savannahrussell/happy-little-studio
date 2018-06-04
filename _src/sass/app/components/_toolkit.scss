@@ -1,23 +1,51 @@
 // ================================
-// Toolkit
+// Tools
 // ================================
 
 .palette,
-.toolkit {
+.toolkit,
+.tools,
+.blend {
   display: flex;
-  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: rem(30px);
+}
+
+// The two drawers
+.drawer {
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  padding: rem(10px);
+  width: rem(260px);
+  height: 100vh;
+  background-color: getcolor(white);
+  transition: 500ms linear all;
+  will-change: translateX;
+  z-index: 5;
+  &.is-inView {
+    transform: translateX(0);
+  }
+}
+
+// Anything that holds two or more items between it on the main view
+.toolkit {
+  justify-content: space-between;
   width: rem(800px);
 }
 
-.toolkit {
-
+.toolkit-label {
+  font-size: rem(16px);
+  text-align: center;
+  font-weight: 600;
+  &-radio {
+    display: inline;
+  }
 }
 
-.toolkit-label {
-  text-align: center;
+.toolkit-legend {
   font-weight: 600;
 }
 
@@ -25,6 +53,21 @@
   width: rem(200px);
   input {
     border: none;
+  }
+  input[type="radio"] {
+    width: auto;
+  }
+}
+
+.tool-radio-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: rem(7px);
+  margin-bottom: rem(7px);
+  height: rem(25px);
+  label {
+    margin-left: rem(7px);
+    margin-bottom: 0;
   }
 }
 
@@ -54,9 +97,31 @@
   }
 }
 
-.palette-drawer {
+.palette-drawer-button {
   .tool-button {
     margin-left: auto;
     margin-right: 0;
+  }
+}
+
+.brush-drawer-button {
+  .tool-button {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.tools {
+  justify-content: space-around;
+  left: 0vw;
+  border-right: 1px solid getcolor(grey, dark);
+  transform: translateX(-300px);
+}
+
+.tools,
+.blend {
+  .tool {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -57,15 +57,20 @@ export default function episodeSelect($nodes) {
 
         // Load up our brush
         function load_palette(obj) {
-          var paletteMarkup = [];
+          var palette = new Object;
+          palette.paletteMarkup = [];
+          palette.blendPaletteMarkup = [];
           for (var i = 0; i < colorsUsed.length; i++) {
             var colorVal = colorsUsed[i];
-            paletteMarkup.push(`<button class="palette-swatch js-swatch ${colorVal}" data-color="${colorObject[colorVal]["value"]}">${colorObject[colorVal]["fancyName"]}</button>`);
+            palette.paletteMarkup.push(`<button class="palette-swatch js-swatch ${colorVal}" data-color="${colorObject[colorVal]["value"]}">${colorObject[colorVal]["fancyName"]}</button>`);
+            palette.blendPaletteMarkup.push(`<button class="palette-blend-swatch js-blend-swatch ${colorVal}" data-color="${colorObject[colorVal]["value"]}"><span class="visually-hidden">${colorObject[colorVal]["fancyName"]}</span></button>`);
           }
-          return paletteMarkup;
+          palette.paletteMarkup.push(`<button class="js-drawer-opener tool-button" data-opens="js-blend">Mix Colors</button>`);
+          return palette;
         }
         var colorArray = load_palette(colorsUsed);
-        $('.js-palette').html(colorArray);
+        $('.js-palette').html(colorArray.paletteMarkup);
+        $('.js-blend-pots').html(colorArray.blendPaletteMarkup);
 
         // And get ready to paint
         $paintAlongLink.attr('href', epLink);
